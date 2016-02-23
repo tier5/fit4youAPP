@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:layout_marginTop="200dp" >
+
+                <ImageView
+                    android:id="@+id/iv_adminlogo"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="150dp"
+                    android:layout_marginTop="40dp"
+                    android:src="@drawable/admin" />
+
+                <EditText
+                    android:id="@+id/et_pin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_adminlogo"
+                    android:background="@null"
+                    android:ems="10"
+                    android:hint="RE-ENTER YOUR MASTER PIN"
+                    android:inputType="number"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/font_gym"
+                    android:textSize="35sp" >
+
+                    <requestFocus />
+                </EditText>
+
+                <View
+                    android:id="@+id/sep"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/et_pin"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/divider_fitforu" />
+
+                <Button
+                    android:id="@+id/btn_admin_confirm_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_below="@+id/sep"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/green_btn"
+                    android:text="CONFIRM"
+                    android:textSize="35sp"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

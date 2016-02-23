@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_blur"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="40dp" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_client_profile"
+                    android:layout_width="230dp"
+                    android:layout_height="230dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/profile_bg" >
+
+                    <com.uipl.fitforyou.utility.RoundedImageView
+                        android:id="@+id/iv_client"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="fitXY" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_clientname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_client_profile"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="20dp"
+                    android:text="JOHN PARKER"
+                    android:textColor="@color/white"
+                    android:textSize="26sp" />
+
+                <TextView
+                    android:id="@+id/tv_clientplace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_clientname"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="40dp"
+                    android:text="ghd hd d"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_session"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_clientplace"
+                    android:orientation="horizontal"
+                    android:weightSum="20" >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="9"
+                        android:background="@drawable/round_transparent_bg" >
+
+                        <TextView
+                            android:id="@+id/tv_client_session_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="June 18, 2015"
+                            android:textColor="@color/white"
+                            android:textSize="22sp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="10"
+                        android:background="@drawable/round_transparent_bg" >
+
+                        <TextView
+                            android:id="@+id/tv_client_session_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="6:00am - 8:00am"
+                            android:textColor="@color/white"
+                            android:textSize="22sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/sep"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/ll_session"
+                    android:layout_marginTop="40dp"
+                    android:background="@color/divider_fitforu" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_trainer_profile"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_below="@+id/sep"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/bottom_profile_bg" >
+
+                    <com.uipl.fitforyou.utility.RoundedImageView
+                        android:id="@+id/iv_trainer"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="fitXY" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_trainername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_trainer_profile"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="20dp"
+                    android:text="PETER MULLER"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_trainerplace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_trainername"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp"
+                    android:text="Trainer"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btn_client_attendance"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_below="@+id/tv_trainerplace"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/green_btn"
+                    android:textColor="@color/white"
+                    android:textSize="35sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

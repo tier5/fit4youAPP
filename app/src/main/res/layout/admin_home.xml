@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_blur"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="40dp" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_admin_profile"
+                    android:layout_width="230dp"
+                    android:layout_height="230dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/profile_bg" >
+
+                    <com.uipl.fitforyou.utility.RoundedImageView
+                        android:id="@+id/iv_admin"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="centerInside" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_adminname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_admin_profile"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="20dp"
+                    android:text="BRUCE JENNER"
+                    android:textColor="@color/white"
+                    android:textSize="26sp" />
+
+                <TextView
+                    android:id="@+id/tv_adminpost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_adminname"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="40dp"
+                    android:inputType="textCapSentences"
+                    android:text="System Administrator"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_adminplace_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_below="@+id/tv_adminpost"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/round_transparent_bg" >
+
+                    <TextView
+                        android:id="@+id/tv_place"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_arw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/arrow" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_admin_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_adminplace_bg"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_admin_street"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_admin_country_pin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/divider_fitforu" />
+
+                    <TextView
+                        android:id="@+id/tv_admin_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/divider_fitforu" />
+
+                    <TextView
+                        android:id="@+id/tv_admin_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/divider_fitforu" />
+
+                    <TextView
+                        android:id="@+id/tv_admin_zip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/divider_fitforu" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_admin_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_below="@+id/ll_admin_details"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/green_btn"
+                    android:text="SET"
+                    android:textColor="@color/white"
+                    android:textSize="35sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp" >
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
